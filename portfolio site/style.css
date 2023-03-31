@@ -1,0 +1,243 @@
+/*
+
+
+--- 01 TYPOGRAPHY SYSTEM
+
+ 
+        - Font sizes (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+        
+        - Font weights: 
+            Default: 400
+
+        - Line heights: 
+            Default: 1
+            Small: 1.05
+            Paragraph default:  1.6
+
+        - Letter spacings:
+        0.75px
+        -0.5px
+
+  
+--- 02 COLORS
+  
+       -- Primary: night #212529
+ 
+       -- Tints: #f8f9fa #c6c7c8
+       -- Shades: 
+       -- Accents:#da904f 
+                  #b27c4e
+       -- Greys: #0e0e0e
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITE SPACE
+
+        - Spacing systems (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #f8f9fa;
+
+  background-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  background-color: #de9b61;
+  padding: 0.1rem 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: #c6c7c8;
+}
+
+.btn:hover {
+  background-color: #b27c4e;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+}
+
+/******************************/
+/* HEADER */
+/******************************/
+
+.main-header {
+  height: 100vh;
+  font-weight: 600;
+  padding: 5rem 5rem;
+
+  background-image: url(media/images/header-background.jpg);
+  background-size: cover;
+}
+
+/* navigation bar */
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link:hover {
+  color: #de9b61;
+}
+
+.mode-swap-icon-container {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mode-swap-icon {
+  width: 4rem;
+  height: 4rem;
+  stroke: #fff;
+  fill: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.mode-swap-icon-container:hover .mode-swap-icon {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+/* introduction */
+
+.introduction-container {
+  height: 100%;
+  font-size: 3rem;
+}
+
+.introduction {
+  height: 100%;
+  padding: 8rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentation {
+}
+
+.transition {
+  transition: all 0.3s;
+}
+
+.transition:hover {
+  color: #ffd8a8;
+  cursor: pointer;
+}
+
+/******************************/
+/* ABOUT */
+/******************************/
+
+.about-me {
+  display: flex;
+  gap: 2rem;
+}
+
+.about-text {
+  background-color: #303030;
+  border-radius: 10px;
+  width: 50%;
+  line-height: 1.2;
+  padding: 2rem 2rem 4rem 4rem;
+}
+
+.about-text p:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/******************************/
+/* CONTACT SECTION */
+/******************************/
+
+.contact {
+  margin: 5rem 0 5rem 0;
+}
+
+.contact-form {
+  margin: 0 auto;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form input,
+.contact-form button,
+.contact-form textarea {
+  font-family: inherit;
+  font-size: 1.8rem;
+  padding: 1rem 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #c6c7c8;
+}
+
+textarea {
+  height: 100px;
+}
+
+.form-btn {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #de9b61;
+  border: 2px solid #de9b61;
+  cursor: pointer;
+}
